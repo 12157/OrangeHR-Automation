@@ -9,7 +9,6 @@ Library   DataDriver    file=../test_data/ValidCredential.xlsx   sheet_name=vali
 * Test Cases *
 Tc1
 
-
 * Keywords *
 valid Credential Template
     [Arguments]     ${username}     ${password}      ${expected_error}
