@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220509 15:05:33.277" rpa="false" schemaversion="3">
+<suite id="s1" name="Verify Valid Credential Suite" source="D:\OrangeHR-Automation\LoginSuite\verify_valid_credential_suite.robot">
+<test id="s1-t1" name="valid credential Test" line="9">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>${EXECDIR}${/}driver</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220509 15:05:33.929" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C;C;C:\Users\User\OneDrive\Desktop\Python\Scripts\;C:\Users\User\OneDrive\Desktop\Python\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;D:\OrangeHR-Automation\LoginSuite\driver'.</msg>
+<status status="PASS" starttime="20220509 15:05:33.929" endtime="20220509 15:05:33.929"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220509 15:05:33.944" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20220509 15:05:33.944" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220509 15:05:33.944" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20220509 15:05:33.944" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://opensource-demo.orangehrmlive.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=btnlogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220509 15:05:34.148" endtime="20220509 15:05:34.148"/>
+</kw>
+<status status="FAIL" starttime="20220509 15:05:33.929" endtime="20220509 15:05:34.148">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<doc>This Suite will handle valid credential
+test -TC_OH_2</doc>
+<status status="FAIL" starttime="20220509 15:05:33.277" endtime="20220509 15:05:34.148"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Verify Valid Credential Suite">Verify Valid Credential Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
