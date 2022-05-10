@@ -1,7 +1,7 @@
 * Settings *
 Documentation       thise suite will handle valid credential
 Resource    ../Resource/CommonFunctionality.resource
-Test Setup      Launch Browser
+TeD:\OrangeHR-Automation\Test_Data\ValidCredential.xlsxst Setup      Launch Browser
 Test Teardown       Close Browser
 Test Template   valid Credential Template
 
